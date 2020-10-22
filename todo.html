@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="text-center pt-3">
+            <button type="button" class="btn btn-outline-transparent text-primary ">Logged in as 123@abc.com</button>
+        </div>
+        <hr>
+
+        <div class="jumbotron  shadow p-5 mb-5 mt-5 rounded">
+            <div id="fixed">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text ">
+                            <input type="checkbox" class="check " checked data-toggle="toggle"
+                                aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <input class="form-control line-through" type="text" placeholder="My finished task" readonly>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <input class="form-control" type="text" placeholder="My unfinished task" readonly>
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-primary">Abandon</button>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input class="form-control line-through" type="text" placeholder="Someone else's finished" readonly>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input class="form-control" type="text" placeholder="Someone else's unfinished" readonly>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div name="checkboxNode" class="input-group-prepend hidden">
+                        <div class="input-group-text">
+                            <input type="checkbox" class="check" data-toggle="toggle"
+                                aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <input class="form-control no-line" type="text" placeholder="unclaimed" readonly>
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-primary ">Claim</button>
+                    </div>
+                </div>
+
+
+                <div class="input-group ">
+                    <input id="inserttxt" type="text" class="form-control" placeholder="Enter a new task here">
+                    <div class="input-group-append">
+                        <button id="insert" type="button" class="btn btn-primary">Add</button>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <button id="remove" type="button" class="btn btn-primary">Remove Complete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="eventlistener.js"></script>
+</body>
+
+</html>
